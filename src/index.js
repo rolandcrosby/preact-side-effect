@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'preact-compat';
 import ExecutionEnvironment from 'exenv';
 import shallowEqual from 'shallowequal';
 
@@ -41,7 +41,7 @@ module.exports = function withSideEffect(
       }
     }
 
-    class SideEffect extends Component {
+    class SideEffect extends React.Component {
       // Try to use displayName of wrapped component
       static displayName = `SideEffect(${getDisplayName(WrappedComponent)})`;
 

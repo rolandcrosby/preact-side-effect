@@ -1,5 +1,5 @@
 {
-  "name": "react-side-effect",
+  "name": "preact-side-effect",
   "version": "1.1.0",
   "description": "Create components whose prop changes map to a global side effect",
   "main": "lib/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-side-effect.git"
+    "url": "https://github.com/ooade/preact-side-effect.git"
   },
   "keywords": [
     "react",
@@ -46,6 +46,8 @@
     "isparta": "^4.0.0",
     "jsdom": "^9.9.1",
     "mocha": "^3.2.0",
+    "preact": "^7.1.0",
+    "preact-compat": "^3.11.0",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
