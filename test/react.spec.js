@@ -11,7 +11,7 @@ const withSideEffect = require('../src');
 function noop() { }
 const identity = x => x
 
-describe('react-side-effect', () => {
+describe('preact-side-effect (on React)' , () => {
   describe('argument validation', () => {
     it('should throw if no reducePropsState function is provided', () => {
       expect(withSideEffect).to.throw('Expected reducePropsToState to be a function.');
