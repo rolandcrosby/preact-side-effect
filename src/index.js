@@ -1,7 +1,5 @@
-
-import { h, Component } from 'preact';
-
 /** @jsx h */
+import { h, Component } from 'preact';
 
 module.exports = function withSideEffect(
   reducePropsToState,
@@ -48,8 +46,8 @@ module.exports = function withSideEffect(
 
       // Expose canUseDOM so tests can monkeypatch it
       static canUseDOM = !!(
-        typeof window !== 'undefined' && 
-        window.document && 
+        typeof window !== 'undefined' &&
+        window.document &&
         window.document.createElement
       );
 
@@ -103,5 +101,5 @@ module.exports = function withSideEffect(
     for (let i in a) if (!(i in b)) return true
     for (let i in b) if (a[i] !== b[i]) return true
     return false
-  }  
+  }
 }
